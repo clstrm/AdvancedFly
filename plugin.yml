@@ -1,0 +1,6 @@
+name: AdvancedFly
+main: cluster.fly.AdvancedFly
+version: 1.1
+author: ClusterStorm
+commands:
+  fly:

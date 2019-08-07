@@ -1,0 +1,52 @@
+messages:
+  enabled: '&6You have &aenabled &6fly.'
+  disabled: '&6You have &cdisabled &6fly.'
+  enabledFor: '&6You have &aenabled &6fly for &e{player}&6.'
+  disabledFor: '&6You have &cdisabled &6fly for &e{player}&6.'
+
+  noPermission: '&cInsufficient permissions!'
+  playerNotFound: '&cPlayer not found.'
+  exemptionError: '&cYou cannot toggle fly for this player.'
+  cannotTeleport: '&cYou cannot teleport when fly is enabled.'
+  overDistance: '&cYou flew too far.'
+  
+  disableEntityDamage: '&cYou cannot damage entity when fly is enabled.'
+  disablePvP: '&cYou cannot PvP when fly is enabled.'
+  disableThrowPotion: '&cYou cannot throw potion when fly is enabled.'
+  disableBowUse: '&cYou cannot use bow when fly is enabled.'
+  disableProjectile: '&cYou cannot throw projectile when fly is enabled.'
+  disableInterationWithBlocks: '&cYou cannot interact with {block} when fly is enabled.'
+  disableInterationWithItemInHand: '&cYou cannot use {item} when fly is enabled.'
+  timerActionBar: '&aFly available: &f{time}'
+  flyExpired: '&cFly is not more available today.'
+
+# If player has permission 'advancedfly.fly.exempt', nobody can toggle fly for him (except console)
+exemptionPermission: true
+
+# If player has 'advancedfly.stay' he will not be teleport when fly is disabled
+noTeleportPermission: true
+
+# The maximum distance to which the player can move away from his saved location
+# Permission to bypass 'advancedfly.overdistance'
+maxDistance: 20
+
+# Player with permission 'advancedfly.fly.time.1' will be able to fly for 300 seconds
+# Player with permission 'advancedfly.fly.overlimit' can fly without limit
+tempFly:
+  enable: true
+  groups:
+   '1': 300
+   '2': 600
+   '3': 900
+
+
+restrictions:
+  disableEntityDamage: true
+  disablePvP: true
+  disableThrowPotion: true
+  disableBowUse: true
+  disableProjectile: true
+  disableInterationWithBlocks: []
+  disableInterationWithItemInHand: [LAVA_BUCKET, WATER_BUCKET]
+
+configVersion: '1.1'
